@@ -68,21 +68,27 @@ nav ul li{
     position: relative;
     background-position: center;
 }
-.sx{
+.sximg{
     width: 20%;
     height: 150px;
     background-size: cover;
     background-image: url(img/img-1.jpg);
 }
-.center{
+.centerimg{
     width: 50%;
     height: 150px;
     background-size: cover;
     background-image: url(img/banner-2.jpg);
 }
-.dx{
+.dximg{
     width: 20%;
     height: 150px;
     background-size: cover;
     background-image: url(img/img-3.jpg);
+}
+footer{
+    text-align: center;
+}
+#heart{
+    color: red;
 }
