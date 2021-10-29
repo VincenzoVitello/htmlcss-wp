@@ -1,13 +1,18 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.logo img{
-    height: 70px;
+.container{
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    height: 50px;
     border-right: 1px solid grey;
     padding-right: 10px;
+    margin: 5px 0 0 5px;
 }
 nav{
     margin: 40px 0;
@@ -15,20 +20,69 @@ nav{
 nav li a:hover{
     text-decoration: underline;
 }
-nav li{
-    display: inline;
+nav li a{
     text-transform: uppercase;
     list-style: none;
     padding-right: 10px;
+    color: darkgrey;
+    text-decoration: none;
+}
+nav ul li{
+    display: inline;
 }
 .banner{
-    height: 500px;
-    background-image: ;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, .5), 
+      rgba(0, 0, 0, .5)
+    ),
+    url(img/banner.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 650px;
     position: relative;
+    border-radius: 15px;
+    background-position: center;
 }
 .banner-text{
-    position: absolute;
-    bottom: 20px;
+    position:absolute;
+    bottom:20px;
+    left: 10px;
+    color:white;
+    margin:20px;
+    
 }
-/* font montserrat */ 
+.leadership{
+    font-weight: bold;
+}
+
+/* elementi flottanti */
+
+.container-2::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+.container-2 > div{
+    float: left;
+    position: relative;
+    background-position: center;
+}
+.sx{
+    width: 20%;
+    height: 150px;
+    background-size: cover;
+    background-image: url(img/img-1.jpg);
+}
+.center{
+    width: 50%;
+    height: 150px;
+    background-size: cover;
+    background-image: url(img/banner-2.jpg);
+}
+.dx{
+    width: 20%;
+    height: 150px;
+    background-size: cover;
+    background-image: url(img/img-3.jpg);
+}
