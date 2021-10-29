@@ -68,27 +68,37 @@ nav ul li{
     position: relative;
     background-position: center;
 }
-.sximg{
+.sxcol,.dxcol{
     width: 20%;
-    height: 150px;
+   
+}
+.centercol{
+    width: 50%;
+}
+
+.sxcol .sximg_img{
     background-size: cover;
     background-image: url(img/img-1.jpg);
 }
-.centerimg{
-    width: 50%;
-    height: 150px;
+
+.centercol .centerimg_img{
     background-size: cover;
     background-image: url(img/banner-2.jpg);
 }
-.dximg{
-    width: 20%;
-    height: 150px;
-    background-size: cover;
-    background-image: url(img/img-3.jpg);
-}
+
 footer{
     text-align: center;
 }
 #heart{
     color: red;
+}
+.dximg-img{
+    background-size: cover;
+    background-image: url(img/img-3.jpg);
+}
+.sximg_img, .dximg-img, .centerimg_img{
+    height: 120px;
+}
+.centerimg_img{
+    background-position: center;
 }
